@@ -2,10 +2,12 @@
 #include <iostream>
 #include <vector>
 
+// Define the grid size and tile size
 const int TILE_SIZE = 40;
 const int GRID_WIDTH = 10;
 const int GRID_HEIGHT = 10;
 
+// Window and renderer
 SDL_Window* window = nullptr;
 SDL_Renderer* renderer = nullptr;
 
