@@ -2,8 +2,8 @@
 #include <SDL.h>
 
 // Graphics
-const int WINDOW_WIDTH = 512;
-const int WINDOW_HEIGHT = 284;
+const int WINDOW_WIDTH = 800;
+const int WINDOW_HEIGHT = 400;
 SDL_Window* g_main_window;
 SDL_Renderer* g_main_renderer;
 
@@ -27,7 +27,7 @@ static bool Init()
   }
 
   g_main_window = SDL_CreateWindow(
-    "Creating a Window (512x284)",
+    "Window",
     SDL_WINDOWPOS_CENTERED,
     SDL_WINDOWPOS_CENTERED,
     WINDOW_WIDTH,
@@ -36,7 +36,7 @@ static bool Init()
   );
 
   if (g_main_window == nullptr) {
-    std::cout << "Unable to crete the main window. Erro: " << SDL_GetError() << std::endl;
+    std::cout << "Unable to crete the main window. Error: " << SDL_GetError() << std::endl;
     SDL_Quit();
     return EXIT_FAILURE;
   }
