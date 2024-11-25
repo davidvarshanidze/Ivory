@@ -4,3 +4,4 @@ CMakeLists.txt
 Makefile
 main.o
 sokoban
+.DS_Store
