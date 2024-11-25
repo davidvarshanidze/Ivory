@@ -36,7 +36,7 @@ static bool Init()
   );
 
   if (g_main_window == nullptr) {
-    std::cout << "Unable to crete the main window. Error: " << SDL_GetError() << std::endl;
+    std::cout << "Unable to crete the window. Error: " << SDL_GetError() << std::endl;
     SDL_Quit();
     return EXIT_FAILURE;
   }
