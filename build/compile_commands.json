@@ -1,8 +1,0 @@
-[
-{
-  "directory": "/Users/sasha/Ivory/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -o CMakeFiles/sokoban.dir/src/main.cpp.o -c /Users/sasha/Ivory/src/main.cpp",
-  "file": "/Users/sasha/Ivory/src/main.cpp",
-  "output": "CMakeFiles/sokoban.dir/src/main.cpp.o"
-}
-]
