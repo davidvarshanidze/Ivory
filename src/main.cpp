@@ -1,13 +1,11 @@
 #include <iostream>
 #include <SDL.h>
 
-// Graphics
 const int WINDOW_WIDTH = 800;
 const int WINDOW_HEIGHT = 400;
 SDL_Window* g_main_window;
 SDL_Renderer* g_main_renderer;
 
-// Colors
 namespace Colors {
   const SDL_Color GREEN = { 0, 255, 0, SDL_ALPHA_OPAQUE };
   const SDL_Color BLACK = { 0, 0, 0, SDL_ALPHA_OPAQUE };
@@ -65,7 +63,6 @@ int main()
 {
   if (Init() == false) { Shutdown(); }
 
-  // Draw loop
   SDL_Event event;
   bool running = true;
 
@@ -73,7 +70,6 @@ int main()
   {
     ClearScreen(g_main_renderer);
 
-    // Check and process I/O events
     if (SDL_PollEvent(&event)) {
       switch (event.type) {
         case SDL_KEYDOWN:
@@ -91,7 +87,6 @@ int main()
       }
     }
 
-    // Update the screen with the content rendered in the background
     SDL_RenderPresent(g_main_renderer);
   }
 
