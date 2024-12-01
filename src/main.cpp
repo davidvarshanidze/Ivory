@@ -2,14 +2,16 @@
 #include <SDL.h>
 #include <utility>
 
-const int WINDOW_WIDTH = 800;
-const int WINDOW_HEIGHT = 400;
+// @window (width, height)
+const int WINDOW_WIDTH = 1024;
+const int WINDOW_HEIGHT = 940;
 SDL_Window* g_main_window;
 SDL_Renderer* g_main_renderer;
 
+// @colors
 namespace Colors {
-  const SDL_Color GREEN = { 0, 255, 0, SDL_ALPHA_OPAQUE };
-  const SDL_Color BLACK = { 0, 0, 0, SDL_ALPHA_OPAQUE };
+  // const SDL_Color GREEN = { 0, 255, 0, SDL_ALPHA_OPAQUE };
+  const SDL_Color BLACK = { 0, 0, 255, SDL_ALPHA_OPAQUE };
 }
 
 static void ClearScreen(SDL_Renderer* renderer)
