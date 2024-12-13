@@ -52,7 +52,7 @@ int main(int argc, char *argv[]) {
 
     // Create the toggle button
     QPushButton *switchButton = new QPushButton("Switch to Dark Mode");
-    switchButton->setFixedSize(200, 40);
+    switchButton->setFixedSize(400, 90);
 
     // Create a layout
     QVBoxLayout *layout = new QVBoxLayout(&window);
