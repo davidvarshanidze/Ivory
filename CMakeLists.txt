@@ -8,29 +8,29 @@ find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets)
 
 qt_standard_project_setup()
 
-qt_add_executable(toplevel
+qt_add_executable(Ivory
     src/main.cpp
 )
 
-set_target_properties(toplevel PROPERTIES
+set_target_properties(Ivory PROPERTIES
     WIN32_EXECUTABLE TRUE
     MACOSX_BUNDLE TRUE
 )
 
-target_link_libraries(toplevel PRIVATE
+target_link_libraries(Ivory PRIVATE
     Qt6::Core
     Qt6::Gui
     Qt6::Widgets
 )
 
-install(TARGETS toplevel
+install(TARGETS Ivory
     BUNDLE  DESTINATION .
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
 )
 
 qt_generate_deploy_app_script(
-    TARGET toplevel
+    TARGET Ivory
     OUTPUT_SCRIPT deploy_script
     NO_UNSUPPORTED_PLATFORM_ERROR
 )

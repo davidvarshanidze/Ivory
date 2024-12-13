@@ -162,50 +162,74 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named toplevel
+# Target rules for targets named Ivory
 
 # Build rule for target.
-toplevel: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 toplevel
-.PHONY : toplevel
+Ivory: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Ivory
+.PHONY : Ivory
 
 # fast build rule for target.
-toplevel/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/toplevel.dir/build.make CMakeFiles/toplevel.dir/build
-.PHONY : toplevel/fast
+Ivory/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Ivory.dir/build.make CMakeFiles/Ivory.dir/build
+.PHONY : Ivory/fast
 
 #=============================================================================
-# Target rules for targets named toplevel_autogen_timestamp_deps
+# Target rules for targets named Ivory_autogen_timestamp_deps
 
 # Build rule for target.
-toplevel_autogen_timestamp_deps: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 toplevel_autogen_timestamp_deps
-.PHONY : toplevel_autogen_timestamp_deps
+Ivory_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Ivory_autogen_timestamp_deps
+.PHONY : Ivory_autogen_timestamp_deps
 
 # fast build rule for target.
-toplevel_autogen_timestamp_deps/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/toplevel_autogen_timestamp_deps.dir/build.make CMakeFiles/toplevel_autogen_timestamp_deps.dir/build
-.PHONY : toplevel_autogen_timestamp_deps/fast
+Ivory_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Ivory_autogen_timestamp_deps.dir/build.make CMakeFiles/Ivory_autogen_timestamp_deps.dir/build
+.PHONY : Ivory_autogen_timestamp_deps/fast
 
 #=============================================================================
-# Target rules for targets named toplevel_autogen
+# Target rules for targets named Ivory_autogen
 
 # Build rule for target.
-toplevel_autogen: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 toplevel_autogen
-.PHONY : toplevel_autogen
+Ivory_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Ivory_autogen
+.PHONY : Ivory_autogen
 
 # fast build rule for target.
-toplevel_autogen/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/toplevel_autogen.dir/build.make CMakeFiles/toplevel_autogen.dir/build
-.PHONY : toplevel_autogen/fast
+Ivory_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Ivory_autogen.dir/build.make CMakeFiles/Ivory_autogen.dir/build
+.PHONY : Ivory_autogen/fast
+
+Ivory_autogen/mocs_compilation.o: Ivory_autogen/mocs_compilation.cpp.o
+.PHONY : Ivory_autogen/mocs_compilation.o
+
+# target to build an object file
+Ivory_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Ivory.dir/build.make CMakeFiles/Ivory.dir/Ivory_autogen/mocs_compilation.cpp.o
+.PHONY : Ivory_autogen/mocs_compilation.cpp.o
+
+Ivory_autogen/mocs_compilation.i: Ivory_autogen/mocs_compilation.cpp.i
+.PHONY : Ivory_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+Ivory_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Ivory.dir/build.make CMakeFiles/Ivory.dir/Ivory_autogen/mocs_compilation.cpp.i
+.PHONY : Ivory_autogen/mocs_compilation.cpp.i
+
+Ivory_autogen/mocs_compilation.s: Ivory_autogen/mocs_compilation.cpp.s
+.PHONY : Ivory_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+Ivory_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Ivory.dir/build.make CMakeFiles/Ivory.dir/Ivory_autogen/mocs_compilation.cpp.s
+.PHONY : Ivory_autogen/mocs_compilation.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/toplevel.dir/build.make CMakeFiles/toplevel.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Ivory.dir/build.make CMakeFiles/Ivory.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -213,7 +237,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/toplevel.dir/build.make CMakeFiles/toplevel.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Ivory.dir/build.make CMakeFiles/Ivory.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -221,32 +245,8 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/toplevel.dir/build.make CMakeFiles/toplevel.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Ivory.dir/build.make CMakeFiles/Ivory.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
-
-toplevel_autogen/mocs_compilation.o: toplevel_autogen/mocs_compilation.cpp.o
-.PHONY : toplevel_autogen/mocs_compilation.o
-
-# target to build an object file
-toplevel_autogen/mocs_compilation.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/toplevel.dir/build.make CMakeFiles/toplevel.dir/toplevel_autogen/mocs_compilation.cpp.o
-.PHONY : toplevel_autogen/mocs_compilation.cpp.o
-
-toplevel_autogen/mocs_compilation.i: toplevel_autogen/mocs_compilation.cpp.i
-.PHONY : toplevel_autogen/mocs_compilation.i
-
-# target to preprocess a source file
-toplevel_autogen/mocs_compilation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/toplevel.dir/build.make CMakeFiles/toplevel.dir/toplevel_autogen/mocs_compilation.cpp.i
-.PHONY : toplevel_autogen/mocs_compilation.cpp.i
-
-toplevel_autogen/mocs_compilation.s: toplevel_autogen/mocs_compilation.cpp.s
-.PHONY : toplevel_autogen/mocs_compilation.s
-
-# target to generate assembly for a file
-toplevel_autogen/mocs_compilation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/toplevel.dir/build.make CMakeFiles/toplevel.dir/toplevel_autogen/mocs_compilation.cpp.s
-.PHONY : toplevel_autogen/mocs_compilation.cpp.s
 
 # Help Target
 help:
@@ -260,15 +260,15 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... toplevel_autogen"
-	@echo "... toplevel_autogen_timestamp_deps"
-	@echo "... toplevel"
+	@echo "... Ivory_autogen"
+	@echo "... Ivory_autogen_timestamp_deps"
+	@echo "... Ivory"
+	@echo "... Ivory_autogen/mocs_compilation.o"
+	@echo "... Ivory_autogen/mocs_compilation.i"
+	@echo "... Ivory_autogen/mocs_compilation.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... toplevel_autogen/mocs_compilation.o"
-	@echo "... toplevel_autogen/mocs_compilation.i"
-	@echo "... toplevel_autogen/mocs_compilation.s"
 .PHONY : help
 
 

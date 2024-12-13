@@ -38,18 +38,18 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE DIRECTORY FILES "/Users/sasha/Ivory/toplevel.app" USE_SOURCE_PERMISSIONS)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./toplevel.app/Contents/MacOS/toplevel" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./toplevel.app/Contents/MacOS/toplevel")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE DIRECTORY FILES "/Users/sasha/Ivory/Ivory.app" USE_SOURCE_PERMISSIONS)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./Ivory.app/Contents/MacOS/Ivory" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./Ivory.app/Contents/MacOS/Ivory")
     execute_process(COMMAND /usr/bin/install_name_tool
       -delete_rpath "/opt/homebrew/lib"
       -add_rpath "@executable_path/../Frameworks"
-      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./toplevel.app/Contents/MacOS/toplevel")
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./Ivory.app/Contents/MacOS/Ivory")
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/Users/sasha/Ivory/.qt/deploy_toplevel_eeebd5c742.cmake")
+  include("/Users/sasha/Ivory/.qt/deploy_Ivory_dcda47de97.cmake")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT

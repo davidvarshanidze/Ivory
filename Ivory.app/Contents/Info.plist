@@ -8,11 +8,11 @@
 	<string>APPL</string>
 
 	<key>CFBundleName</key>
-	<string>toplevel</string>
+	<string>Ivory</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.yourcompany.toplevel</string>
+	<string>com.yourcompany.Ivory</string>
 	<key>CFBundleExecutable</key>
-	<string>toplevel</string>
+	<string>Ivory</string>
 
 	<key>CFBundleVersion</key>
 	<string>1.0.0</string>

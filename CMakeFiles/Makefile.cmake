@@ -7,7 +7,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  ".qt/info_plist/toplevel/Info.plist"
+  ".qt/info_plist/Ivory/Info.plist"
   "CMakeFiles/3.31.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.31.2/CMakeSystem.cmake"
   "CMakeLists.txt"
@@ -268,21 +268,21 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  ".qt/info_plist/toplevel/Info.plist"
-  "CMakeFiles/toplevel_autogen.dir/AutogenInfo.json"
+  ".qt/info_plist/Ivory/Info.plist"
+  "CMakeFiles/Ivory_autogen.dir/AutogenInfo.json"
   ".qt/QtDeploySupport.cmake"
-  ".qt/deploy_toplevel_eeebd5c742.cmake"
+  ".qt/deploy_Ivory_dcda47de97.cmake"
   ".qt/QtDeployTargets.cmake"
-  ".qt/toplevel-plugins.cmake"
-  "toplevel.app/Contents/MacOS"
-  "toplevel.app/Contents/Info.plist"
-  "toplevel.app/Contents/Info.plist"
+  ".qt/Ivory-plugins.cmake"
+  "Ivory.app/Contents/MacOS"
+  "Ivory.app/Contents/Info.plist"
+  "Ivory.app/Contents/Info.plist"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/toplevel.dir/DependInfo.cmake"
-  "CMakeFiles/toplevel_autogen_timestamp_deps.dir/DependInfo.cmake"
-  "CMakeFiles/toplevel_autogen.dir/DependInfo.cmake"
+  "CMakeFiles/Ivory.dir/DependInfo.cmake"
+  "CMakeFiles/Ivory_autogen_timestamp_deps.dir/DependInfo.cmake"
+  "CMakeFiles/Ivory_autogen.dir/DependInfo.cmake"
   )
