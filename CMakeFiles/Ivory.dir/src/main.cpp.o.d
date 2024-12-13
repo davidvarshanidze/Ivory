@@ -1649,4 +1649,6 @@ CMakeFiles/Ivory.dir/src/main.cpp.o: /Users/sasha/Ivory/src/main.cpp \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qwhatsthis.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qwidget.h \
   /opt/homebrew/lib/QtWidgets.framework/Headers/qwidgetaction.h \
-  /opt/homebrew/lib/QtWidgets.framework/Headers/qwizard.h
+  /opt/homebrew/lib/QtWidgets.framework/Headers/qwizard.h \
+  /opt/homebrew/lib/QtGui.framework/Headers/QTextBlock \
+  /opt/homebrew/lib/QtGui.framework/Headers/qtextobject.h
