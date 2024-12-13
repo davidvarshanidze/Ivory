@@ -1,0 +1,3 @@
+/Users/sasha/Ivory/CMakeFiles/hello.dir
+/Users/sasha/Ivory/CMakeFiles/edit_cache.dir
+/Users/sasha/Ivory/CMakeFiles/rebuild_cache.dir
