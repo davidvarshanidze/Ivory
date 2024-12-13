@@ -1,3 +1,9 @@
-/Users/sasha/Ivory/CMakeFiles/hello.dir
+/Users/sasha/Ivory/CMakeFiles/toplevel.dir
 /Users/sasha/Ivory/CMakeFiles/edit_cache.dir
 /Users/sasha/Ivory/CMakeFiles/rebuild_cache.dir
+/Users/sasha/Ivory/CMakeFiles/list_install_components.dir
+/Users/sasha/Ivory/CMakeFiles/install.dir
+/Users/sasha/Ivory/CMakeFiles/install/local.dir
+/Users/sasha/Ivory/CMakeFiles/install/strip.dir
+/Users/sasha/Ivory/CMakeFiles/toplevel_autogen_timestamp_deps.dir
+/Users/sasha/Ivory/CMakeFiles/toplevel_autogen.dir

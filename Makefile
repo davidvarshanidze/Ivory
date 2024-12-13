@@ -85,6 +85,51 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/opt/homebrew/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/opt/homebrew/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sasha/Ivory/CMakeFiles /Users/sasha/Ivory//CMakeFiles/progress.marks
@@ -117,24 +162,50 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named hello
+# Target rules for targets named toplevel
 
 # Build rule for target.
-hello: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hello
-.PHONY : hello
+toplevel: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 toplevel
+.PHONY : toplevel
 
 # fast build rule for target.
-hello/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/build
-.PHONY : hello/fast
+toplevel/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/toplevel.dir/build.make CMakeFiles/toplevel.dir/build
+.PHONY : toplevel/fast
+
+#=============================================================================
+# Target rules for targets named toplevel_autogen_timestamp_deps
+
+# Build rule for target.
+toplevel_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 toplevel_autogen_timestamp_deps
+.PHONY : toplevel_autogen_timestamp_deps
+
+# fast build rule for target.
+toplevel_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/toplevel_autogen_timestamp_deps.dir/build.make CMakeFiles/toplevel_autogen_timestamp_deps.dir/build
+.PHONY : toplevel_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named toplevel_autogen
+
+# Build rule for target.
+toplevel_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 toplevel_autogen
+.PHONY : toplevel_autogen
+
+# fast build rule for target.
+toplevel_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/toplevel_autogen.dir/build.make CMakeFiles/toplevel_autogen.dir/build
+.PHONY : toplevel_autogen/fast
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/toplevel.dir/build.make CMakeFiles/toplevel.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -142,7 +213,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/toplevel.dir/build.make CMakeFiles/toplevel.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -150,8 +221,32 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/toplevel.dir/build.make CMakeFiles/toplevel.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+toplevel_autogen/mocs_compilation.o: toplevel_autogen/mocs_compilation.cpp.o
+.PHONY : toplevel_autogen/mocs_compilation.o
+
+# target to build an object file
+toplevel_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/toplevel.dir/build.make CMakeFiles/toplevel.dir/toplevel_autogen/mocs_compilation.cpp.o
+.PHONY : toplevel_autogen/mocs_compilation.cpp.o
+
+toplevel_autogen/mocs_compilation.i: toplevel_autogen/mocs_compilation.cpp.i
+.PHONY : toplevel_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+toplevel_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/toplevel.dir/build.make CMakeFiles/toplevel.dir/toplevel_autogen/mocs_compilation.cpp.i
+.PHONY : toplevel_autogen/mocs_compilation.cpp.i
+
+toplevel_autogen/mocs_compilation.s: toplevel_autogen/mocs_compilation.cpp.s
+.PHONY : toplevel_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+toplevel_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/toplevel.dir/build.make CMakeFiles/toplevel.dir/toplevel_autogen/mocs_compilation.cpp.s
+.PHONY : toplevel_autogen/mocs_compilation.cpp.s
 
 # Help Target
 help:
@@ -160,11 +255,20 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... hello"
+	@echo "... toplevel_autogen"
+	@echo "... toplevel_autogen_timestamp_deps"
+	@echo "... toplevel"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... toplevel_autogen/mocs_compilation.o"
+	@echo "... toplevel_autogen/mocs_compilation.i"
+	@echo "... toplevel_autogen/mocs_compilation.s"
 .PHONY : help
 
 

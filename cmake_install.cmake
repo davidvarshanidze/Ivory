@@ -37,6 +37,21 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/Library/Developer/CommandLineTools/usr/bin/objdump")
 endif()
 
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE DIRECTORY FILES "/Users/sasha/Ivory/toplevel.app" USE_SOURCE_PERMISSIONS)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./toplevel.app/Contents/MacOS/toplevel" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./toplevel.app/Contents/MacOS/toplevel")
+    execute_process(COMMAND /usr/bin/install_name_tool
+      -delete_rpath "/opt/homebrew/lib"
+      -add_rpath "@executable_path/../Frameworks"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./toplevel.app/Contents/MacOS/toplevel")
+  endif()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  include("/Users/sasha/Ivory/.qt/deploy_toplevel_eeebd5c742.cmake")
+endif()
+
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
