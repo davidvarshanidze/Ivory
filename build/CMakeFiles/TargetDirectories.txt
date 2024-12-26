@@ -1,0 +1,9 @@
+/Users/sasha/Ivory/build/CMakeFiles/Ivory.dir
+/Users/sasha/Ivory/build/CMakeFiles/edit_cache.dir
+/Users/sasha/Ivory/build/CMakeFiles/rebuild_cache.dir
+/Users/sasha/Ivory/build/CMakeFiles/list_install_components.dir
+/Users/sasha/Ivory/build/CMakeFiles/install.dir
+/Users/sasha/Ivory/build/CMakeFiles/install/local.dir
+/Users/sasha/Ivory/build/CMakeFiles/install/strip.dir
+/Users/sasha/Ivory/build/CMakeFiles/Ivory_autogen_timestamp_deps.dir
+/Users/sasha/Ivory/build/CMakeFiles/Ivory_autogen.dir

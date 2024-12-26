@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/Users/sasha/Ivory/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/sasha/Ivory/build/Ivory_autogen/include -isystem /opt/homebrew/lib/QtCore.framework/Headers -iframework /opt/homebrew/lib -isystem /opt/homebrew/share/qt/mkspecs/macx-clang -isystem /opt/homebrew/include -isystem /opt/homebrew/lib/QtGui.framework/Headers -isystem /opt/homebrew/lib/QtWidgets.framework/Headers -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -o CMakeFiles/Ivory.dir/Ivory_autogen/mocs_compilation.cpp.o -c /Users/sasha/Ivory/build/Ivory_autogen/mocs_compilation.cpp",
+  "file": "/Users/sasha/Ivory/build/Ivory_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/Ivory.dir/Ivory_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/Users/sasha/Ivory/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/sasha/Ivory/build/Ivory_autogen/include -isystem /opt/homebrew/lib/QtCore.framework/Headers -iframework /opt/homebrew/lib -isystem /opt/homebrew/share/qt/mkspecs/macx-clang -isystem /opt/homebrew/include -isystem /opt/homebrew/lib/QtGui.framework/Headers -isystem /opt/homebrew/lib/QtWidgets.framework/Headers -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -o CMakeFiles/Ivory.dir/src/main.cpp.o -c /Users/sasha/Ivory/src/main.cpp",
+  "file": "/Users/sasha/Ivory/src/main.cpp",
+  "output": "CMakeFiles/Ivory.dir/src/main.cpp.o"
+}
+]
